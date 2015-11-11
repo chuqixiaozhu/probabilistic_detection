@@ -1,0 +1,59 @@
+Node 0: dist = 1.4185321860823867
+==== At 0 ====
+e_s = 1
+signal = 1.129756 (/0.5)
+Target is 1
+count = 1 (/1)
+true_alam = 1
+==== At 1 ====
+e_s = 1
+signal = 1.327197 (/0.5)
+Target is 1
+count = 1 (/1)
+true_alam = 2
+==== At 2 ====
+e_s = 1
+signal = 1.3460540000000001 (/0.5)
+Target is 1
+count = 1 (/1)
+true_alam = 3
+==== At 3 ====
+e_s = 1
+signal = 1.14317 (/0.5)
+Target is 1
+count = 1 (/1)
+true_alam = 4
+==== At 4 ====
+e_s = 1
+signal = 0.64119700000000002 (/0.5)
+Target is 1
+count = 1 (/1)
+true_alam = 5
+==== At 5 ====
+e_s = 1
+signal = 1.3806880000000001 (/0.5)
+Target is 1
+count = 1 (/1)
+true_alam = 6
+==== At 6 ====
+e_s = 1
+signal = 0.32443699999999998 (/0.5)
+Target is 1
+count = 0 (/1)
+==== At 7 ====
+e_s = 1
+signal = 1.4537499999999999 (/0.5)
+Target is 1
+count = 1 (/1)
+true_alam = 7
+==== At 8 ====
+e_s = 1
+signal = 0.737622 (/0.5)
+Target is 1
+count = 1 (/1)
+true_alam = 8
+==== At 9 ====
+e_s = 1
+signal = 0.43723500000000004 (/0.5)
+Target is 1
+count = 0 (/1)

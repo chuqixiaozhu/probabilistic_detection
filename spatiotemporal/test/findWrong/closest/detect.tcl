@@ -32,13 +32,13 @@ set opt(ntarget) 1;                        # number of targets
 set opt(node_size) 1                       ;# Size of nodes
 set opt(target_size) 2                     ;# Size of the target
 set opt(time_click) 1;                      # Duration of a time slice
-set opt(noise_avg) 0.1;                       # Noise average
+set opt(noise_avg) 0.05;                       # Noise average
 set opt(noise_var) [expr 2 * $opt(noise_avg)]; # Noise variance
 set opt(noise_std) [expr sqrt($opt(noise_var))]; # Noise standard deviation
 set opt(S_0) 2;                             # Maximum of source singal
 set opt(decay_factor) 2;                    # Decay factor
 set opt(d_0) 5     ;# Distance threshold of Fixed nodes
-set opt(sensitivity) 2;         # Factor for modifying lambda
+set opt(sensitivity) 1;         # Factor for modifying lambda
 set opt(lambda) [expr $opt(S_0)/pow(1.1, $opt(decay_factor)) + $opt(noise_avg) - $opt(sensitivity) * $opt(noise_var)]\
     ; # Threshold of Signal measurements
 #set opt(phi) 0.5;           # Threshold of System Sensing probability

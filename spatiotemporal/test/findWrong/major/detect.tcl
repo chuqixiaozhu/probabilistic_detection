@@ -32,15 +32,17 @@ set opt(ntarget) 1;                        # number of targets
 set opt(node_size) 1                       ;# Size of nodes
 set opt(target_size) 2                     ;# Size of the target
 set opt(time_click) 1;                      # Duration of a time slice
-set opt(noise_avg) 0.05;                       # Noise average
+#set opt(noise_avg) 0.0015;                       # Noise average
+#set opt(noise_var) [expr 2 * $opt(noise_avg)]; # Noise variance
+set opt(noise_avg) 0.1;                       # Noise average
 set opt(noise_var) [expr 2 * $opt(noise_avg)]; # Noise variance
 set opt(noise_std) [expr sqrt($opt(noise_var))]; # Noise standard deviation
 set opt(S_0) 2;                             # Maximum of source singal
 set opt(decay_factor) 2;                    # Decay factor
 set opt(d_0) 5     ;# Distance threshold of Fixed nodes
 set opt(sensitivity) 1;         # Factor for modifying lambda
-#set opt(lambda) [expr $opt(S_0)/pow(1.9, $opt(decay_factor)) + $opt(noise_avg) - $opt(sensitivity) * $opt(noise_var)]
-set opt(lambda) [expr $opt(S_0)/pow(1.9, $opt(decay_factor)) + $opt(noise_avg) - $opt(sensitivity) * $opt(noise_var)] \
+#set opt(lambda) [expr $opt(S_0)/pow(1.9, $opt(decay_factor)) + $opt(noise_avg) - $opt(sensitivity) * $opt(noise_std)]
+set opt(lambda) 1.3 \
     ; # Threshold of Signal measurements
 #set opt(major_threshold) [expr round($opt(nfnode) / 2.0)]; # Majority Rule
 set opt(PA) 0.05;         # Target Appearance probability
@@ -60,6 +62,7 @@ if {0 < $argc} {
 }
 set opt(major_threshold) [expr round($opt(nfnode) / 2.0)]; # Majority Rule
 set opt(nn) [expr $opt(ntarget) + $opt(nfnode)] ;# sum of nodes
+#set opt(d_0) [expr $opt(x)/2.0 * pow(4.0*$opt(noise_std)/$opt(S_0), 1.0/$opt(decay_factor))]     ;# Distance threshold of Fixed nodes
 #===================================
 #        Initialization
 #===================================
@@ -286,7 +289,18 @@ proc deploy_sensor {x_ y_} {
 
     set dist [distance_xy $x $y $opt(spot_x) $opt(spot_y)]
     set lower [expr $opt(radius_range_lower) * $opt(d_0)]
+    if {$lower > $opt(x)/2} {
+        set lower [expr int($opt(x)/2)]
+    }
     set upper [expr $opt(radius_range_upper) * $opt(d_0)]
+    if {$upper > $opt(x)/2} {
+        set upper [expr int($opt(x)/2)]
+    }
+    if {$lower >= $upper} {
+        puts "Error: deploy_sensor: the Range is wrong!"
+        return Error
+    }
+    #puts $opt(tmpfile) "lower: $lower, upper: $upper"
     while {$dist > $upper || $dist < $lower} {
         set x [get_a_x]
         set y [get_a_y]
@@ -369,6 +383,11 @@ while {$time_line < $opt(stop)} {
 proc system_probas {} {
     global opt
     set presences [expr $opt(PA) * $opt(stop)]
+    if {!$presences} {
+        set opt(detection_proba) -1
+        set opt(false_proba) -1
+        return
+    }
     set absences [expr $opt(stop) - $presences]
     set opt(detection_proba) [expr $opt(true_alarm) / $presences]
     set opt(false_proba) [expr 1.0 * $opt(false_alarm) / $absences]

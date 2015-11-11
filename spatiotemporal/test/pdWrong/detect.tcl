@@ -26,18 +26,20 @@ set opt(x)      30                        ;# X dimension of topography
 set opt(y)      30                        ;# Y dimension of topography
 set opt(spot_x) [expr $opt(x) / 2.0];      # X coordinate of Target Spot
 set opt(spot_y) [expr $opt(y) / 2.0];      # Y coordinate of Target Spot
-set opt(stop)   100                        ;# time of simulation end
+set opt(stop)   1000                        ;# time of simulation end
 set opt(nfnode) 1                        ;# number of fixed nodes
 set opt(ntarget) 1;                        # number of targets
 set opt(node_size) 1                       ;# Size of nodes
 set opt(target_size) 2                     ;# Size of the target
 set opt(time_click) 1;                      # Duration of a time slice
-set opt(noise_avg) 0.05;                       # Noise average
+#set opt(noise_avg) 0.05;                       # NOISE AVERAGE
+#set opt(noise_var) [expr 2 * $opt(noise_avg)]; # Noise variance
+set opt(noise_avg) 0.1;                       # NOISE AVERAGE
 set opt(noise_var) [expr 2 * $opt(noise_avg)]; # Noise variance
 set opt(noise_std) [expr sqrt($opt(noise_var))]; # Noise standard deviation
-set opt(S_0) 2;                             # Maximum of source signal
+set opt(S_0) 1;                             # Maximum of source signal
 set opt(decay_factor) 2;                    # Decay factor
-#set opt(d_0) 12     ;# Distance threshold of Fixed nodes
+set opt(d_0) 5     ;# Distance threshold of Fixed nodes
 set opt(sensitivity) 1;         # Factor for modifying lambda
 set opt(phi) 0.5;           # Threshold of System Sensing probability
 set opt(PA) 0.05;         # Target Appearance probability
@@ -51,7 +53,7 @@ set opt(radius_range_upper) 3;    # Upper Times of radius
 set opt(decision_time) 1;         # Round time of final decision making
 set opt(decision_threshold) [expr $opt(decision_time)/2 + 1]; # Decide Final 1 only if positive round time is not less than
 
-set opt(tmpfile) [open tmp w];  # test
+#set opt(tmpfile) [open tmp w];  # test
 #puts "decision_threshold: $opt(decision_threshold)"; # test
 
 if {0 < $argc} {
@@ -59,7 +61,7 @@ if {0 < $argc} {
     set opt(result_file) [lindex $argv 1]
 }
 set opt(nn) [expr $opt(ntarget) + $opt(nfnode)] ;# sum of nodes
-set opt(d_0) [expr $opt(x)/2.0 * pow(4.0*$opt(noise_std)/$opt(S_0), 1.0/$opt(decay_factor))]     ;# Distance threshold of Fixed nodes
+#set opt(d_0) [expr $opt(x)/2.0 * pow(4.0*$opt(noise_std)/$opt(S_0), 1.0/$opt(decay_factor))]     ;# Distance threshold of Fixed nodes
 
 #puts $opt(tmpfile) "d_0 = $opt(d_0)"; # test
 
