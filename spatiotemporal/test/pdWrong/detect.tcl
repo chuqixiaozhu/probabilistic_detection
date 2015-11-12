@@ -27,15 +27,15 @@ set opt(y)      30                        ;# Y dimension of topography
 set opt(spot_x) [expr $opt(x) / 2.0];      # X coordinate of Target Spot
 set opt(spot_y) [expr $opt(y) / 2.0];      # Y coordinate of Target Spot
 set opt(stop)   1000                        ;# time of simulation end
-set opt(nfnode) 1                        ;# number of fixed nodes
+set opt(nfnode) 5                        ;# number of fixed nodes
 set opt(ntarget) 1;                        # number of targets
 set opt(node_size) 1                       ;# Size of nodes
 set opt(target_size) 2                     ;# Size of the target
 set opt(time_click) 1;                      # Duration of a time slice
 #set opt(noise_avg) 0.05;                       # NOISE AVERAGE
 #set opt(noise_var) [expr 2 * $opt(noise_avg)]; # Noise variance
-set opt(noise_avg) 0.1;                       # NOISE AVERAGE
-set opt(noise_var) [expr 2 * $opt(noise_avg)]; # Noise variance
+set opt(noise_avg) 0;                       # NOISE AVERAGE
+set opt(noise_var) 1; # Noise variance
 set opt(noise_std) [expr sqrt($opt(noise_var))]; # Noise standard deviation
 set opt(S_0) 1;                             # Maximum of source signal
 set opt(decay_factor) 2;                    # Decay factor
@@ -244,7 +244,7 @@ proc fixed_sensors_detect {time_stamp} {
         for {set i 0} {$i < $opt(nfnode)} {incr i} {
             set dist $fdists($i)
             set signal [signal_measurement $dist $time_stamp]
-            #puts $opt(tmpfile) "singal = $signal (/$lambda($i))"
+            #puts "singal = $signal (/$lambda($i))"
             if {$signal >= $lambda($i)} {
                 set is_alert 1
                 set pba $pdi($i)
@@ -252,6 +252,8 @@ proc fixed_sensors_detect {time_stamp} {
                 set PAPBA [expr $PAPBA * $pba]
                 set P_APB_A [expr $P_APB_A * $pb_a]
                 #$fnode($i) color "green"
+                #puts "pba $i = $pba"
+                #puts "pb_a $i = $pb_a"
             }
         }
         if {!$is_alert} {
@@ -261,7 +263,7 @@ proc fixed_sensors_detect {time_stamp} {
         set PAPBA [expr $opt(PA) * $PAPBA]
         set P_APB_A [expr (1 - $opt(PA)) * $P_APB_A]
         set Q [expr $PAPBA / ($PAPBA + $P_APB_A)]
-        #puts $opt(tmpfile) "Q = $Q"
+        #puts "Q = $Q"
         if {$Q >= $opt(phi)} {
             incr ac
             if {$ac >= $opt(decision_threshold)} {

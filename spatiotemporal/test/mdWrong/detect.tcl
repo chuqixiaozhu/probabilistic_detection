@@ -34,15 +34,16 @@ set opt(target_size) 2                     ;# Size of the target
 set opt(time_click) 1;                      # Duration of a time slice
 #set opt(noise_avg) 0.0015;                       # Noise average
 #set opt(noise_var) [expr 2 * $opt(noise_avg)]; # Noise variance
-set opt(noise_avg) 0.1;                       # Noise average
-set opt(noise_var) [expr 2 * $opt(noise_avg)]; # Noise variance
+set opt(noise_avg) 0;                       # Noise average
+set opt(noise_var) 0.0002; # Noise variance
 set opt(noise_std) [expr sqrt($opt(noise_var))]; # Noise standard deviation
 set opt(S_0) 1;                             # Maximum of source singal
 set opt(decay_factor) 2;                    # Decay factor
 set opt(d_0) 5     ;# Distance threshold of Fixed nodes
 set opt(sensitivity) 1;         # Factor for modifying lambda
-#set opt(lambda) [expr $opt(S_0)/pow(1.9, $opt(decay_factor)) + $opt(noise_avg) - $opt(sensitivity) * $opt(noise_std)]
-set opt(lambda) 0.5 \
+#set opt(lambda) [expr $opt(S_0)/pow(1.8, $opt(decay_factor)) + $opt(noise_avg) - $opt(sensitivity) * $opt(noise_std)]
+#set opt(lambda) [expr $opt(S_0)/pow(1.15, $opt(decay_factor)) + $opt(noise_avg) - $opt(sensitivity) * $opt(noise_std)]
+set opt(lambda) 0.3 \
     ; # Threshold of Signal measurements
 #set opt(major_threshold) [expr round($opt(nfnode) / 2.0)]; # Majority Rule
 set opt(PA) 0.05;         # Target Appearance probability

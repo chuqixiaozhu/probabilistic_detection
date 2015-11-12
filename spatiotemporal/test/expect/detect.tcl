@@ -34,8 +34,8 @@ set opt(target_size) 2                     ;# Size of the target
 set opt(time_click) 1;                      # Duration of a time slice
 #set opt(noise_avg) 0.05;                       # NOISE AVERAGE
 #set opt(noise_var) [expr 2 * $opt(noise_avg)]; # Noise variance
-set opt(noise_avg) 0.1;                       # NOISE AVERAGE
-set opt(noise_var) [expr 2 * $opt(noise_avg)]; # Noise variance
+set opt(noise_avg) 0;                       # NOISE AVERAGE
+set opt(noise_var) 1; # Noise variance
 set opt(noise_std) [expr sqrt($opt(noise_var))]; # Noise standard deviation
 set opt(S_0) 1;                             # Maximum of source signal
 set opt(decay_factor) 2;                    # Decay factor

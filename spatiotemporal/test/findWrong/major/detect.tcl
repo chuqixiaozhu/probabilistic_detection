@@ -26,26 +26,26 @@ set opt(x)      30                        ;# X dimension of topography
 set opt(y)      30                        ;# Y dimension of topography
 set opt(spot_x) [expr $opt(x) / 2.0];      # X coordinate of Target Spot
 set opt(spot_y) [expr $opt(y) / 2.0];      # Y coordinate of Target Spot
-set opt(stop)   1000                        ;# time of simulation end
-set opt(nfnode) 5                        ;# number of fixed nodes
+set opt(stop)   10                        ;# time of simulation end
+set opt(nfnode) 3                        ;# number of fixed nodes
 set opt(ntarget) 1;                        # number of targets
 set opt(node_size) 1                       ;# Size of nodes
 set opt(target_size) 2                     ;# Size of the target
 set opt(time_click) 1;                      # Duration of a time slice
 #set opt(noise_avg) 0.0015;                       # Noise average
 #set opt(noise_var) [expr 2 * $opt(noise_avg)]; # Noise variance
-set opt(noise_avg) 0.1;                       # Noise average
+set opt(noise_avg) 1;                       # Noise average
 set opt(noise_var) [expr 2 * $opt(noise_avg)]; # Noise variance
 set opt(noise_std) [expr sqrt($opt(noise_var))]; # Noise standard deviation
-set opt(S_0) 2;                             # Maximum of source singal
+set opt(S_0) 1;                             # Maximum of source singal
 set opt(decay_factor) 2;                    # Decay factor
 set opt(d_0) 5     ;# Distance threshold of Fixed nodes
 set opt(sensitivity) 1;         # Factor for modifying lambda
 #set opt(lambda) [expr $opt(S_0)/pow(1.9, $opt(decay_factor)) + $opt(noise_avg) - $opt(sensitivity) * $opt(noise_std)]
-set opt(lambda) 1.3 \
+set opt(lambda) 0.3 \
     ; # Threshold of Signal measurements
 #set opt(major_threshold) [expr round($opt(nfnode) / 2.0)]; # Majority Rule
-set opt(PA) 0.05;         # Target Appearance probability
+set opt(PA) 0.1;         # Target Appearance probability
 set opt(target_on) 0;     # Flag of target's presence
 set opt(true_alarm) 0;   # Number of true alarms
 set opt(false_alarm) 0;   # Number of false alarms
@@ -216,10 +216,13 @@ proc signal_measurement {dist time_stamp} {
     } else {
         set e_s 0
     }
+    puts "dist = $dist";        # test
+    puts "e_s = $e_s";          # test
     # Noise intensity
     set rd [new RNG]
     $rd seed 0
     set e_n [$rd normal $opt(noise_avg) $opt(noise_std)]
+    puts "e_n = $e_n";          # test
     # Signal Measurement
     set e_i [expr $e_s + $e_n]
     return $e_i
@@ -228,19 +231,22 @@ proc signal_measurement {dist time_stamp} {
 # Fixed sensors detect
 proc fixed_sensors_detect {time_stamp} {
     global opt fnode fdists ; #lambda
-    #puts "================= $time_stamp ================="; # test
+    puts "================= $time_stamp ================="; # test
     set count 0
     for {set i 0} {$i < $opt(nfnode)} {incr i} {
+        puts "**** Node $i ****"; # test
         $fnode($i) color "black"
         set dist $fdists($i)
         set signal [signal_measurement $dist $time_stamp]
         #puts "**** ($i) signal = $signal lambda = $lambda($i)"; # test
+        puts "signal = $signal (/$opt(lambda))"; # test
         #if {$signal >= $lambda($i)} { }
         if {$signal >= $opt(lambda)} {
             incr count
             $fnode($i) color "green"
         }
     }
+    puts "count = $count (/$opt(major_threshold))"; # test
     if {!$count} {
         return
     }
@@ -253,6 +259,9 @@ proc fixed_sensors_detect {time_stamp} {
             incr opt(false_alarm)
         }
     }
+    puts "The target is $opt(target_on)"; # test
+    puts "true_alarm = $opt(true_alarm)"; # test
+    puts "false_alarm = $opt(false_alarm)"; # test
 }
 
 #===================================
@@ -391,6 +400,10 @@ proc system_probas {} {
     set absences [expr $opt(stop) - $presences]
     set opt(detection_proba) [expr $opt(true_alarm) / $presences]
     set opt(false_proba) [expr 1.0 * $opt(false_alarm) / $absences]
+    puts "true_alarm = $opt(true_alarm) (/$presences)"; # test
+    puts "false_alarm = $opt(false_alarm) (/$absences)"; # test
+    puts "detection_proba: $opt(detection_proba)";       # test
+    puts "false_proba: $opt(false_proba)";               # test
 }
 
 # Calculate the results
