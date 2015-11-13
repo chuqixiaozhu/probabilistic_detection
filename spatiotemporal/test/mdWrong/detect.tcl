@@ -35,15 +35,15 @@ set opt(time_click) 1;                      # Duration of a time slice
 #set opt(noise_avg) 0.0015;                       # Noise average
 #set opt(noise_var) [expr 2 * $opt(noise_avg)]; # Noise variance
 set opt(noise_avg) 0;                       # Noise average
-set opt(noise_var) 0.0002; # Noise variance
+set opt(noise_var) 1; # Noise variance
 set opt(noise_std) [expr sqrt($opt(noise_var))]; # Noise standard deviation
-set opt(S_0) 1;                             # Maximum of source singal
+set opt(S_0) 6;                             # Maximum of source singal
 set opt(decay_factor) 2;                    # Decay factor
 set opt(d_0) 5     ;# Distance threshold of Fixed nodes
 set opt(sensitivity) 1;         # Factor for modifying lambda
 #set opt(lambda) [expr $opt(S_0)/pow(1.8, $opt(decay_factor)) + $opt(noise_avg) - $opt(sensitivity) * $opt(noise_std)]
 #set opt(lambda) [expr $opt(S_0)/pow(1.15, $opt(decay_factor)) + $opt(noise_avg) - $opt(sensitivity) * $opt(noise_std)]
-set opt(lambda) 0.3 \
+set opt(lambda) 1.0 \
     ; # Threshold of Signal measurements
 #set opt(major_threshold) [expr round($opt(nfnode) / 2.0)]; # Majority Rule
 set opt(PA) 0.05;         # Target Appearance probability
@@ -169,9 +169,11 @@ proc normal_CDF {x mean sd} {
         } else {
             set y [string range $y 0 3]
         }
-    } elseif {[string length $y] == 3} {
+    }
+    if {[string length $y] == 3} {
         append y "0"
-    } elseif {[string length $y] == 1} {
+    }
+    if {[string length $y] == 1} {
         append y ".00"
     }
     set value $normal($y)

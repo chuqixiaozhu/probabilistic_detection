@@ -17,7 +17,7 @@ else:
     count = int(argvs[1])
 for i in range(count):
     #for fnode_num in range(10, 101, 10):
-    for fnode_num in range(2, 7):
+    for fnode_num in range(1, 11):
         subprocess.call(['ns', 'detect.tcl', str(fnode_num), result_file])
 
 # Process the results

@@ -283,7 +283,7 @@ proc deploy_sensor {x_ y_} {
 }
 
 # Create Fixed nodes
-set dist_min InF
+set dist_min Inf
 for {set i 0} {$i < $opt(nfnode)} {incr i} {
     set fnode($i) [$ns node]
     set xf [get_a_x]

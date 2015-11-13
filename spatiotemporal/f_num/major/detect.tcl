@@ -26,20 +26,24 @@ set opt(x)      30                        ;# X dimension of topography
 set opt(y)      30                        ;# Y dimension of topography
 set opt(spot_x) [expr $opt(x) / 2.0];      # X coordinate of Target Spot
 set opt(spot_y) [expr $opt(y) / 2.0];      # Y coordinate of Target Spot
-set opt(stop)   10000                        ;# time of simulation end
+set opt(stop)   1000                        ;# time of simulation end
 set opt(nfnode) 5                        ;# number of fixed nodes
 set opt(ntarget) 1;                        # number of targets
 set opt(node_size) 1                       ;# Size of nodes
 set opt(target_size) 2                     ;# Size of the target
 set opt(time_click) 1;                      # Duration of a time slice
-set opt(noise_avg) 0.01;                       # Noise average
-set opt(noise_var) [expr 2 * $opt(noise_avg)]; # Noise variance
+#set opt(noise_avg) 0.0015;                       # Noise average
+#set opt(noise_var) [expr 2 * $opt(noise_avg)]; # Noise variance
+set opt(noise_avg) 0;                       # Noise average
+set opt(noise_var) 1; # Noise variance
 set opt(noise_std) [expr sqrt($opt(noise_var))]; # Noise standard deviation
-set opt(S_0) 5;                             # Maximum of source singal
+set opt(S_0) 6;                             # Maximum of source singal
 set opt(decay_factor) 2;                    # Decay factor
 set opt(d_0) 5     ;# Distance threshold of Fixed nodes
-set opt(sensitivity) 2;         # Factor for modifying lambda
-set opt(lambda) [expr $opt(S_0)/pow(1.9, $opt(decay_factor)) + $opt(noise_avg) - $opt(sensitivity) * $opt(noise_var)]\
+set opt(sensitivity) 1;         # Factor for modifying lambda
+#set opt(lambda) [expr $opt(S_0)/pow(1.8, $opt(decay_factor)) + $opt(noise_avg) - $opt(sensitivity) * $opt(noise_std)]
+#set opt(lambda) [expr $opt(S_0)/pow(1.15, $opt(decay_factor)) + $opt(noise_avg) - $opt(sensitivity) * $opt(noise_std)]
+set opt(lambda) 1.0 \
     ; # Threshold of Signal measurements
 #set opt(major_threshold) [expr round($opt(nfnode) / 2.0)]; # Majority Rule
 set opt(PA) 0.05;         # Target Appearance probability
@@ -51,12 +55,17 @@ set opt(false_proba) 0;     # False Alarm Probability
 set opt(radius_range_lower) 0;    # Lower Times of radius
 set opt(radius_range_upper) 3;    # Upper Times of radius
 
+#set opt(tmpfile) [open tmp w];  # test
+
+#puts "lambda: $opt(lambda)";    # test
+
 if {0 < $argc} {
     set opt(nfnode) [lindex $argv 0]
     set opt(result_file) [lindex $argv 1]
 }
 set opt(major_threshold) [expr round($opt(nfnode) / 2.0)]; # Majority Rule
 set opt(nn) [expr $opt(ntarget) + $opt(nfnode)] ;# sum of nodes
+#set opt(d_0) [expr $opt(x)/2.0 * pow(4.0*$opt(noise_std)/$opt(S_0), 1.0/$opt(decay_factor))]     ;# Distance threshold of Fixed nodes
 #===================================
 #        Initialization
 #===================================
@@ -160,9 +169,11 @@ proc normal_CDF {x mean sd} {
         } else {
             set y [string range $y 0 3]
         }
-    } elseif {[string length $y] == 3} {
+    }
+    if {[string length $y] == 3} {
         append y "0"
-    } elseif {[string length $y] == 1} {
+    }
+    if {[string length $y] == 1} {
         append y ".00"
     }
     set value $normal($y)
@@ -210,6 +221,7 @@ proc signal_measurement {dist time_stamp} {
     } else {
         set e_s 0
     }
+    #puts $opt(tmpfile) "e_s = $e_s"
     # Noise intensity
     set rd [new RNG]
     $rd seed 0
@@ -223,11 +235,13 @@ proc signal_measurement {dist time_stamp} {
 proc fixed_sensors_detect {time_stamp} {
     global opt fnode fdists ; #lambda
     #puts "================= $time_stamp ================="; # test
+    #puts $opt(tmpfile) "==== At $time_stamp ===="
     set count 0
     for {set i 0} {$i < $opt(nfnode)} {incr i} {
         $fnode($i) color "black"
         set dist $fdists($i)
         set signal [signal_measurement $dist $time_stamp]
+        #puts $opt(tmpfile) "signal = $signal (/$opt(lambda))"
         #puts "**** ($i) signal = $signal lambda = $lambda($i)"; # test
         #if {$signal >= $lambda($i)} { }
         if {$signal >= $opt(lambda)} {
@@ -235,6 +249,8 @@ proc fixed_sensors_detect {time_stamp} {
             $fnode($i) color "green"
         }
     }
+    #puts $opt(tmpfile) "Target is $opt(target_on)"
+    #puts $opt(tmpfile) "count = $count (/$opt(major_threshold))"
     if {!$count} {
         return
     }
@@ -247,6 +263,7 @@ proc fixed_sensors_detect {time_stamp} {
             incr opt(false_alarm)
         }
     }
+    #puts $opt(tmpfile) "true_alam = $opt(true_alarm)"
 }
 
 #===================================
@@ -283,7 +300,18 @@ proc deploy_sensor {x_ y_} {
 
     set dist [distance_xy $x $y $opt(spot_x) $opt(spot_y)]
     set lower [expr $opt(radius_range_lower) * $opt(d_0)]
+    if {$lower > $opt(x)/2} {
+        set lower [expr int($opt(x)/2)]
+    }
     set upper [expr $opt(radius_range_upper) * $opt(d_0)]
+    if {$upper > $opt(x)/2} {
+        set upper [expr int($opt(x)/2)]
+    }
+    if {$lower >= $upper} {
+        puts "Error: deploy_sensor: the Range is wrong!"
+        return Error
+    }
+    #puts $opt(tmpfile) "lower: $lower, upper: $upper"
     while {$dist > $upper || $dist < $lower} {
         set x [get_a_x]
         set y [get_a_y]
@@ -299,6 +327,7 @@ for {set i 0} {$i < $opt(nfnode)} {incr i} {
     set yf [get_a_y]
     set dist [deploy_sensor xf yf]
     set fdists($i) $dist
+    #puts $opt(tmpfile) "Node $i: dist = $dist"
     #puts "***** $i:";           # test
     #set lambda($i) [compute_lambda $dist]
     #puts "lambda: $lambda($i)"; # test
@@ -342,6 +371,7 @@ for {set i 0} {$i < $count} {incr i} {
         set t [$rd integer $opt(stop)]
     }
     set click($t) 1
+    #set click($i) 1
 }
 # Set target schedule
 for {set t 0} {$t < $opt(stop)} {incr t} {
@@ -366,6 +396,11 @@ while {$time_line < $opt(stop)} {
 proc system_probas {} {
     global opt
     set presences [expr $opt(PA) * $opt(stop)]
+    if {!$presences} {
+        set opt(detection_proba) -1
+        set opt(false_proba) -1
+        return
+    }
     set absences [expr $opt(stop) - $presences]
     set opt(detection_proba) [expr $opt(true_alarm) / $presences]
     set opt(false_proba) [expr 1.0 * $opt(false_alarm) / $absences]
@@ -389,8 +424,8 @@ proc output_file {} {
 proc finish {} {
     global ns tracefile namfile opt argc
     getting_results
-    #puts "detection_proba: $opt(detection_proba)"
-    #puts "false_proba: $opt(false_proba)"
+    puts "detection_proba: $opt(detection_proba)"
+    puts "false_proba: $opt(false_proba)"
     $ns flush-trace
     if {0 < $argc} {
         output_file
