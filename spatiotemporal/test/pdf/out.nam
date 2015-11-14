@@ -1,13 +1,13 @@
-n -t * -s 0  -x 26.999025152530066 -y 11.099648457532586 -Z 0 -z 1  -v circle -c black
-n -t * -s 1  -x 12.685326478763169 -y 26.108002386106179 -Z 0 -z 1  -v circle -c black
-n -t * -s 2  -x 15.105401335798856 -y 21.571799186790269 -Z 0 -z 1  -v circle -c black
-n -t * -s 3  -x 3.8095530186824278 -y 5.9945390028853618 -Z 0 -z 1  -v circle -c black
-n -t * -s 4  -x 0.2749462054460059 -y 12.393718907792922 -Z 0 -z 1  -v circle -c black
-n -t * -s 5  -x 7.9795617647373867 -y 20.724132065998454 -Z 0 -z 1  -v circle -c black
-n -t * -s 6  -x 8.0116734225357291 -y 12.495726809136441 -Z 0 -z 1  -v circle -c black
-n -t * -s 7  -x 18.736249831847964 -y 6.4608695667520486 -Z 0 -z 1  -v circle -c black
-n -t * -s 8  -x 22.319834312572997 -y 18.669683900042291 -Z 0 -z 1  -v circle -c black
-n -t * -s 9  -x 24.924538831657049 -y 17.733507597694874 -Z 0 -z 1  -v circle -c black
+n -t * -s 0  -x 8.2679026984925859 -y 19.615020365274987 -Z 0 -z 1  -v circle -c black
+n -t * -s 1  -x 15.815682232294085 -y 19.841473251507374 -Z 0 -z 1  -v circle -c black
+n -t * -s 2  -x 21.849971698527209 -y 6.7273781852458505 -Z 0 -z 1  -v circle -c black
+n -t * -s 3  -x 4.145725771852641 -y 6.0070627816054332 -Z 0 -z 1  -v circle -c black
+n -t * -s 4  -x 13.04279046740513 -y 7.395385609658149 -Z 0 -z 1  -v circle -c black
+n -t * -s 5  -x 14.550816707569554 -y 17.820356533778995 -Z 0 -z 1  -v circle -c black
+n -t * -s 6  -x 6.1131602414479298 -y 7.0314828525443946 -Z 0 -z 1  -v circle -c black
+n -t * -s 7  -x 7.7622320771972788 -y 13.070584131903287 -Z 0 -z 1  -v circle -c black
+n -t * -s 8  -x 25.252750634799128 -y 8.9883253346142951 -Z 0 -z 1  -v circle -c black
+n -t * -s 9  -x 12.154217549671522 -y 24.559893242344209 -Z 0 -z 1  -v circle -c black
 n -t * -s 10  -x 15 -y 15 -Z 0 -z 2  -v circle -c black
 V -t * -v 1.0a5 -a 0
 W -t * -x 30 -y 30
@@ -233,7 +233,7 @@ n -t 19 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 19 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 19 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 19 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 20 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 20 -s 10 -S COLOR -c red -o black -i red -I black
 n -t 20 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 20 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 20 -s 2 -S COLOR -c black -o black -i black -I black
@@ -244,7 +244,7 @@ n -t 20 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 20 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 20 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 20 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 21 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 21 -s 10 -S COLOR -c red -o red -i red -I red
 n -t 21 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 21 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 21 -s 2 -S COLOR -c black -o black -i black -I black
@@ -255,7 +255,7 @@ n -t 21 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 21 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 21 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 21 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 22 -s 10 -S COLOR -c red -o black -i red -I black
+n -t 22 -s 10 -S COLOR -c black -o red -i black -I red
 n -t 22 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 22 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 22 -s 2 -S COLOR -c black -o black -i black -I black
@@ -266,7 +266,7 @@ n -t 22 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 22 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 22 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 22 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 23 -s 10 -S COLOR -c black -o red -i black -I red
+n -t 23 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 23 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 23 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 23 -s 2 -S COLOR -c black -o black -i black -I black
@@ -387,7 +387,7 @@ n -t 33 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 33 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 33 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 33 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 34 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 34 -s 10 -S COLOR -c red -o black -i red -I black
 n -t 34 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 34 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 34 -s 2 -S COLOR -c black -o black -i black -I black
@@ -398,7 +398,7 @@ n -t 34 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 34 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 34 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 34 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 35 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 35 -s 10 -S COLOR -c black -o red -i black -I red
 n -t 35 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 35 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 35 -s 2 -S COLOR -c black -o black -i black -I black
@@ -541,7 +541,7 @@ n -t 47 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 47 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 47 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 47 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 48 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 48 -s 10 -S COLOR -c red -o black -i red -I black
 n -t 48 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 48 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 48 -s 2 -S COLOR -c black -o black -i black -I black
@@ -552,7 +552,7 @@ n -t 48 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 48 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 48 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 48 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 49 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 49 -s 10 -S COLOR -c black -o red -i black -I red
 n -t 49 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 49 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 49 -s 2 -S COLOR -c black -o black -i black -I black
@@ -629,7 +629,7 @@ n -t 55 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 55 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 55 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 55 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 56 -s 10 -S COLOR -c red -o black -i red -I black
+n -t 56 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 56 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 56 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 56 -s 2 -S COLOR -c black -o black -i black -I black
@@ -640,7 +640,7 @@ n -t 56 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 56 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 56 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 56 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 57 -s 10 -S COLOR -c black -o red -i black -I red
+n -t 57 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 57 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 57 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 57 -s 2 -S COLOR -c black -o black -i black -I black
@@ -805,7 +805,7 @@ n -t 71 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 71 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 71 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 71 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 72 -s 10 -S COLOR -c red -o black -i red -I black
+n -t 72 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 72 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 72 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 72 -s 2 -S COLOR -c black -o black -i black -I black
@@ -816,7 +816,7 @@ n -t 72 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 72 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 72 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 72 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 73 -s 10 -S COLOR -c black -o red -i black -I red
+n -t 73 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 73 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 73 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 73 -s 2 -S COLOR -c black -o black -i black -I black
@@ -838,7 +838,7 @@ n -t 74 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 74 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 74 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 74 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 75 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 75 -s 10 -S COLOR -c red -o black -i red -I black
 n -t 75 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 75 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 75 -s 2 -S COLOR -c black -o black -i black -I black
@@ -849,7 +849,7 @@ n -t 75 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 75 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 75 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 75 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 76 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 76 -s 10 -S COLOR -c black -o red -i black -I red
 n -t 76 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 76 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 76 -s 2 -S COLOR -c black -o black -i black -I black
@@ -926,7 +926,7 @@ n -t 82 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 82 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 82 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 82 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 83 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 83 -s 10 -S COLOR -c red -o black -i red -I black
 n -t 83 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 83 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 83 -s 2 -S COLOR -c black -o black -i black -I black
@@ -937,7 +937,7 @@ n -t 83 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 83 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 83 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 83 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 84 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 84 -s 10 -S COLOR -c black -o red -i black -I red
 n -t 84 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 84 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 84 -s 2 -S COLOR -c black -o black -i black -I black
@@ -1036,7 +1036,7 @@ n -t 92 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 92 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 92 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 92 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 93 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 93 -s 10 -S COLOR -c red -o black -i red -I black
 n -t 93 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 93 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 93 -s 2 -S COLOR -c black -o black -i black -I black
@@ -1047,7 +1047,7 @@ n -t 93 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 93 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 93 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 93 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 94 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 94 -s 10 -S COLOR -c black -o red -i black -I red
 n -t 94 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 94 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 94 -s 2 -S COLOR -c black -o black -i black -I black
@@ -1058,7 +1058,7 @@ n -t 94 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 94 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 94 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 94 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 95 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 95 -s 10 -S COLOR -c red -o black -i red -I black
 n -t 95 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 95 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 95 -s 2 -S COLOR -c black -o black -i black -I black
@@ -1069,7 +1069,7 @@ n -t 95 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 95 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 95 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 95 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 96 -s 10 -S COLOR -c red -o black -i red -I black
+n -t 96 -s 10 -S COLOR -c black -o red -i black -I red
 n -t 96 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 96 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 96 -s 2 -S COLOR -c black -o black -i black -I black
@@ -1080,7 +1080,7 @@ n -t 96 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 96 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 96 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 96 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 97 -s 10 -S COLOR -c black -o red -i black -I red
+n -t 97 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 97 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 97 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 97 -s 2 -S COLOR -c black -o black -i black -I black
@@ -1245,7 +1245,7 @@ n -t 111 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 111 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 111 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 111 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 112 -s 10 -S COLOR -c red -o black -i red -I black
+n -t 112 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 112 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 112 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 112 -s 2 -S COLOR -c black -o black -i black -I black
@@ -1256,7 +1256,7 @@ n -t 112 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 112 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 112 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 112 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 113 -s 10 -S COLOR -c black -o red -i black -I red
+n -t 113 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 113 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 113 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 113 -s 2 -S COLOR -c black -o black -i black -I black
@@ -1311,7 +1311,7 @@ n -t 117 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 117 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 117 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 117 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 118 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 118 -s 10 -S COLOR -c red -o black -i red -I black
 n -t 118 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 118 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 118 -s 2 -S COLOR -c black -o black -i black -I black
@@ -1322,7 +1322,7 @@ n -t 118 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 118 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 118 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 118 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 119 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 119 -s 10 -S COLOR -c black -o red -i black -I red
 n -t 119 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 119 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 119 -s 2 -S COLOR -c black -o black -i black -I black
@@ -1454,7 +1454,7 @@ n -t 130 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 130 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 130 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 130 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 131 -s 10 -S COLOR -c red -o black -i red -I black
+n -t 131 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 131 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 131 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 131 -s 2 -S COLOR -c black -o black -i black -I black
@@ -1465,7 +1465,7 @@ n -t 131 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 131 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 131 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 131 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 132 -s 10 -S COLOR -c black -o red -i black -I red
+n -t 132 -s 10 -S COLOR -c red -o black -i red -I black
 n -t 132 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 132 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 132 -s 2 -S COLOR -c black -o black -i black -I black
@@ -1476,7 +1476,7 @@ n -t 132 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 132 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 132 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 132 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 133 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 133 -s 10 -S COLOR -c black -o red -i black -I red
 n -t 133 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 133 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 133 -s 2 -S COLOR -c black -o black -i black -I black
@@ -1542,7 +1542,7 @@ n -t 138 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 138 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 138 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 138 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 139 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 139 -s 10 -S COLOR -c red -o black -i red -I black
 n -t 139 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 139 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 139 -s 2 -S COLOR -c black -o black -i black -I black
@@ -1553,7 +1553,7 @@ n -t 139 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 139 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 139 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 139 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 140 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 140 -s 10 -S COLOR -c black -o red -i black -I red
 n -t 140 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 140 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 140 -s 2 -S COLOR -c black -o black -i black -I black
@@ -1641,7 +1641,7 @@ n -t 147 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 147 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 147 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 147 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 148 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 148 -s 10 -S COLOR -c red -o black -i red -I black
 n -t 148 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 148 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 148 -s 2 -S COLOR -c black -o black -i black -I black
@@ -1652,7 +1652,7 @@ n -t 148 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 148 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 148 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 148 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 149 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 149 -s 10 -S COLOR -c black -o red -i black -I red
 n -t 149 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 149 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 149 -s 2 -S COLOR -c black -o black -i black -I black
@@ -1751,7 +1751,7 @@ n -t 157 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 157 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 157 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 157 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 158 -s 10 -S COLOR -c red -o black -i red -I black
+n -t 158 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 158 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 158 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 158 -s 2 -S COLOR -c black -o black -i black -I black
@@ -1762,7 +1762,7 @@ n -t 158 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 158 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 158 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 158 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 159 -s 10 -S COLOR -c black -o red -i black -I red
+n -t 159 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 159 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 159 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 159 -s 2 -S COLOR -c black -o black -i black -I black
@@ -1795,7 +1795,7 @@ n -t 161 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 161 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 161 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 161 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 162 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 162 -s 10 -S COLOR -c red -o black -i red -I black
 n -t 162 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 162 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 162 -s 2 -S COLOR -c black -o black -i black -I black
@@ -1806,7 +1806,7 @@ n -t 162 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 162 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 162 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 162 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 163 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 163 -s 10 -S COLOR -c black -o red -i black -I red
 n -t 163 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 163 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 163 -s 2 -S COLOR -c black -o black -i black -I black
@@ -1993,7 +1993,7 @@ n -t 179 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 179 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 179 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 179 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 180 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 180 -s 10 -S COLOR -c red -o black -i red -I black
 n -t 180 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 180 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 180 -s 2 -S COLOR -c black -o black -i black -I black
@@ -2004,7 +2004,7 @@ n -t 180 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 180 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 180 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 180 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 181 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 181 -s 10 -S COLOR -c black -o red -i black -I red
 n -t 181 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 181 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 181 -s 2 -S COLOR -c black -o black -i black -I black
@@ -2246,7 +2246,7 @@ n -t 202 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 202 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 202 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 202 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 203 -s 10 -S COLOR -c red -o black -i red -I black
+n -t 203 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 203 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 203 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 203 -s 2 -S COLOR -c black -o black -i black -I black
@@ -2257,7 +2257,7 @@ n -t 203 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 203 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 203 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 203 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 204 -s 10 -S COLOR -c red -o red -i red -I red
+n -t 204 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 204 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 204 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 204 -s 2 -S COLOR -c black -o black -i black -I black
@@ -2268,7 +2268,7 @@ n -t 204 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 204 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 204 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 204 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 205 -s 10 -S COLOR -c black -o red -i black -I red
+n -t 205 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 205 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 205 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 205 -s 2 -S COLOR -c black -o black -i black -I black
@@ -2488,7 +2488,7 @@ n -t 224 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 224 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 224 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 224 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 225 -s 10 -S COLOR -c red -o black -i red -I black
+n -t 225 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 225 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 225 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 225 -s 2 -S COLOR -c black -o black -i black -I black
@@ -2499,7 +2499,7 @@ n -t 225 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 225 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 225 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 225 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 226 -s 10 -S COLOR -c black -o red -i black -I red
+n -t 226 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 226 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 226 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 226 -s 2 -S COLOR -c black -o black -i black -I black
@@ -2521,7 +2521,7 @@ n -t 227 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 227 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 227 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 227 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 228 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 228 -s 10 -S COLOR -c red -o black -i red -I black
 n -t 228 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 228 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 228 -s 2 -S COLOR -c black -o black -i black -I black
@@ -2532,7 +2532,7 @@ n -t 228 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 228 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 228 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 228 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 229 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 229 -s 10 -S COLOR -c black -o red -i black -I red
 n -t 229 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 229 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 229 -s 2 -S COLOR -c black -o black -i black -I black
@@ -2719,7 +2719,7 @@ n -t 245 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 245 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 245 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 245 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 246 -s 10 -S COLOR -c red -o black -i red -I black
+n -t 246 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 246 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 246 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 246 -s 2 -S COLOR -c black -o black -i black -I black
@@ -2730,7 +2730,7 @@ n -t 246 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 246 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 246 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 246 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 247 -s 10 -S COLOR -c red -o red -i red -I red
+n -t 247 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 247 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 247 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 247 -s 2 -S COLOR -c black -o black -i black -I black
@@ -2741,7 +2741,7 @@ n -t 247 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 247 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 247 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 247 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 248 -s 10 -S COLOR -c black -o red -i black -I red
+n -t 248 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 248 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 248 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 248 -s 2 -S COLOR -c black -o black -i black -I black
@@ -2961,7 +2961,7 @@ n -t 267 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 267 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 267 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 267 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 268 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 268 -s 10 -S COLOR -c red -o black -i red -I black
 n -t 268 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 268 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 268 -s 2 -S COLOR -c black -o black -i black -I black
@@ -2972,7 +2972,7 @@ n -t 268 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 268 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 268 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 268 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 269 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 269 -s 10 -S COLOR -c black -o red -i black -I red
 n -t 269 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 269 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 269 -s 2 -S COLOR -c black -o black -i black -I black
@@ -2983,7 +2983,7 @@ n -t 269 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 269 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 269 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 269 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 270 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 270 -s 10 -S COLOR -c red -o black -i red -I black
 n -t 270 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 270 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 270 -s 2 -S COLOR -c black -o black -i black -I black
@@ -2994,7 +2994,7 @@ n -t 270 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 270 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 270 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 270 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 271 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 271 -s 10 -S COLOR -c red -o red -i red -I red
 n -t 271 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 271 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 271 -s 2 -S COLOR -c black -o black -i black -I black
@@ -3005,7 +3005,7 @@ n -t 271 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 271 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 271 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 271 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 272 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 272 -s 10 -S COLOR -c black -o red -i black -I red
 n -t 272 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 272 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 272 -s 2 -S COLOR -c black -o black -i black -I black
@@ -3192,7 +3192,7 @@ n -t 288 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 288 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 288 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 288 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 289 -s 10 -S COLOR -c red -o black -i red -I black
+n -t 289 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 289 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 289 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 289 -s 2 -S COLOR -c black -o black -i black -I black
@@ -3203,7 +3203,7 @@ n -t 289 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 289 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 289 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 289 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 290 -s 10 -S COLOR -c black -o red -i black -I red
+n -t 290 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 290 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 290 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 290 -s 2 -S COLOR -c black -o black -i black -I black
@@ -3291,7 +3291,7 @@ n -t 297 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 297 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 297 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 297 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 298 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 298 -s 10 -S COLOR -c red -o black -i red -I black
 n -t 298 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 298 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 298 -s 2 -S COLOR -c black -o black -i black -I black
@@ -3302,7 +3302,7 @@ n -t 298 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 298 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 298 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 298 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 299 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 299 -s 10 -S COLOR -c black -o red -i black -I red
 n -t 299 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 299 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 299 -s 2 -S COLOR -c black -o black -i black -I black
@@ -3566,7 +3566,7 @@ n -t 322 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 322 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 322 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 322 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 323 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 323 -s 10 -S COLOR -c red -o black -i red -I black
 n -t 323 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 323 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 323 -s 2 -S COLOR -c black -o black -i black -I black
@@ -3577,7 +3577,7 @@ n -t 323 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 323 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 323 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 323 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 324 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 324 -s 10 -S COLOR -c black -o red -i black -I red
 n -t 324 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 324 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 324 -s 2 -S COLOR -c black -o black -i black -I black
@@ -3632,7 +3632,7 @@ n -t 328 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 328 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 328 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 328 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 329 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 329 -s 10 -S COLOR -c red -o black -i red -I black
 n -t 329 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 329 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 329 -s 2 -S COLOR -c black -o black -i black -I black
@@ -3643,7 +3643,7 @@ n -t 329 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 329 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 329 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 329 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 330 -s 10 -S COLOR -c red -o black -i red -I black
+n -t 330 -s 10 -S COLOR -c black -o red -i black -I red
 n -t 330 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 330 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 330 -s 2 -S COLOR -c black -o black -i black -I black
@@ -3654,7 +3654,7 @@ n -t 330 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 330 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 330 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 330 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 331 -s 10 -S COLOR -c black -o red -i black -I red
+n -t 331 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 331 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 331 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 331 -s 2 -S COLOR -c black -o black -i black -I black
@@ -3797,7 +3797,7 @@ n -t 343 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 343 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 343 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 343 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 344 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 344 -s 10 -S COLOR -c red -o black -i red -I black
 n -t 344 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 344 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 344 -s 2 -S COLOR -c black -o black -i black -I black
@@ -3808,7 +3808,7 @@ n -t 344 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 344 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 344 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 344 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 345 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 345 -s 10 -S COLOR -c black -o red -i black -I red
 n -t 345 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 345 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 345 -s 2 -S COLOR -c black -o black -i black -I black
@@ -3874,7 +3874,7 @@ n -t 350 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 350 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 350 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 350 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 351 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 351 -s 10 -S COLOR -c red -o black -i red -I black
 n -t 351 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 351 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 351 -s 2 -S COLOR -c black -o black -i black -I black
@@ -3885,7 +3885,7 @@ n -t 351 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 351 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 351 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 351 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 352 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 352 -s 10 -S COLOR -c black -o red -i black -I red
 n -t 352 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 352 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 352 -s 2 -S COLOR -c black -o black -i black -I black
@@ -3940,7 +3940,7 @@ n -t 356 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 356 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 356 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 356 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 357 -s 10 -S COLOR -c red -o black -i red -I black
+n -t 357 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 357 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 357 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 357 -s 2 -S COLOR -c black -o black -i black -I black
@@ -3951,7 +3951,7 @@ n -t 357 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 357 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 357 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 357 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 358 -s 10 -S COLOR -c black -o red -i black -I red
+n -t 358 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 358 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 358 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 358 -s 2 -S COLOR -c black -o black -i black -I black
@@ -4006,7 +4006,7 @@ n -t 362 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 362 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 362 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 362 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 363 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 363 -s 10 -S COLOR -c red -o black -i red -I black
 n -t 363 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 363 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 363 -s 2 -S COLOR -c black -o black -i black -I black
@@ -4017,7 +4017,7 @@ n -t 363 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 363 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 363 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 363 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 364 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 364 -s 10 -S COLOR -c black -o red -i black -I red
 n -t 364 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 364 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 364 -s 2 -S COLOR -c black -o black -i black -I black
@@ -4072,7 +4072,7 @@ n -t 368 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 368 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 368 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 368 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 369 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 369 -s 10 -S COLOR -c red -o black -i red -I black
 n -t 369 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 369 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 369 -s 2 -S COLOR -c black -o black -i black -I black
@@ -4083,7 +4083,7 @@ n -t 369 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 369 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 369 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 369 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 370 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 370 -s 10 -S COLOR -c black -o red -i black -I red
 n -t 370 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 370 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 370 -s 2 -S COLOR -c black -o black -i black -I black
@@ -4237,7 +4237,7 @@ n -t 383 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 383 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 383 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 383 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 384 -s 10 -S COLOR -c red -o black -i red -I black
+n -t 384 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 384 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 384 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 384 -s 2 -S COLOR -c black -o black -i black -I black
@@ -4248,7 +4248,7 @@ n -t 384 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 384 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 384 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 384 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 385 -s 10 -S COLOR -c black -o red -i black -I red
+n -t 385 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 385 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 385 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 385 -s 2 -S COLOR -c black -o black -i black -I black
@@ -4347,7 +4347,7 @@ n -t 393 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 393 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 393 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 393 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 394 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 394 -s 10 -S COLOR -c red -o black -i red -I black
 n -t 394 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 394 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 394 -s 2 -S COLOR -c black -o black -i black -I black
@@ -4358,7 +4358,7 @@ n -t 394 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 394 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 394 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 394 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 395 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 395 -s 10 -S COLOR -c black -o red -i black -I red
 n -t 395 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 395 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 395 -s 2 -S COLOR -c black -o black -i black -I black
@@ -4369,7 +4369,7 @@ n -t 395 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 395 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 395 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 395 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 396 -s 10 -S COLOR -c red -o black -i red -I black
+n -t 396 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 396 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 396 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 396 -s 2 -S COLOR -c black -o black -i black -I black
@@ -4380,7 +4380,7 @@ n -t 396 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 396 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 396 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 396 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 397 -s 10 -S COLOR -c black -o red -i black -I red
+n -t 397 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 397 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 397 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 397 -s 2 -S COLOR -c black -o black -i black -I black
@@ -4391,7 +4391,7 @@ n -t 397 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 397 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 397 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 397 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 398 -s 10 -S COLOR -c red -o black -i red -I black
+n -t 398 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 398 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 398 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 398 -s 2 -S COLOR -c black -o black -i black -I black
@@ -4402,7 +4402,7 @@ n -t 398 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 398 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 398 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 398 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 399 -s 10 -S COLOR -c black -o red -i black -I red
+n -t 399 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 399 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 399 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 399 -s 2 -S COLOR -c black -o black -i black -I black
@@ -4622,7 +4622,7 @@ n -t 418 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 418 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 418 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 418 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 419 -s 10 -S COLOR -c red -o black -i red -I black
+n -t 419 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 419 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 419 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 419 -s 2 -S COLOR -c black -o black -i black -I black
@@ -4633,7 +4633,7 @@ n -t 419 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 419 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 419 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 419 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 420 -s 10 -S COLOR -c black -o red -i black -I red
+n -t 420 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 420 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 420 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 420 -s 2 -S COLOR -c black -o black -i black -I black
@@ -5040,7 +5040,7 @@ n -t 456 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 456 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 456 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 456 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 457 -s 10 -S COLOR -c red -o black -i red -I black
+n -t 457 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 457 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 457 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 457 -s 2 -S COLOR -c black -o black -i black -I black
@@ -5051,7 +5051,7 @@ n -t 457 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 457 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 457 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 457 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 458 -s 10 -S COLOR -c black -o red -i black -I red
+n -t 458 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 458 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 458 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 458 -s 2 -S COLOR -c black -o black -i black -I black
@@ -5260,7 +5260,7 @@ n -t 476 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 476 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 476 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 476 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 477 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 477 -s 10 -S COLOR -c red -o black -i red -I black
 n -t 477 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 477 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 477 -s 2 -S COLOR -c black -o black -i black -I black
@@ -5271,7 +5271,7 @@ n -t 477 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 477 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 477 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 477 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 478 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 478 -s 10 -S COLOR -c black -o red -i black -I red
 n -t 478 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 478 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 478 -s 2 -S COLOR -c black -o black -i black -I black
@@ -5326,7 +5326,7 @@ n -t 482 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 482 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 482 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 482 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 483 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 483 -s 10 -S COLOR -c red -o black -i red -I black
 n -t 483 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 483 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 483 -s 2 -S COLOR -c black -o black -i black -I black
@@ -5337,7 +5337,7 @@ n -t 483 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 483 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 483 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 483 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 484 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 484 -s 10 -S COLOR -c black -o red -i black -I red
 n -t 484 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 484 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 484 -s 2 -S COLOR -c black -o black -i black -I black
@@ -5403,7 +5403,7 @@ n -t 489 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 489 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 489 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 489 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 490 -s 10 -S COLOR -c red -o black -i red -I black
+n -t 490 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 490 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 490 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 490 -s 2 -S COLOR -c black -o black -i black -I black
@@ -5414,7 +5414,7 @@ n -t 490 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 490 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 490 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 490 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 491 -s 10 -S COLOR -c black -o red -i black -I red
+n -t 491 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 491 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 491 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 491 -s 2 -S COLOR -c black -o black -i black -I black
@@ -5491,7 +5491,7 @@ n -t 497 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 497 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 497 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 497 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 498 -s 10 -S COLOR -c red -o black -i red -I black
+n -t 498 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 498 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 498 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 498 -s 2 -S COLOR -c black -o black -i black -I black
@@ -5502,7 +5502,7 @@ n -t 498 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 498 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 498 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 498 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 499 -s 10 -S COLOR -c black -o red -i black -I red
+n -t 499 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 499 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 499 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 499 -s 2 -S COLOR -c black -o black -i black -I black
@@ -5535,7 +5535,7 @@ n -t 501 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 501 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 501 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 501 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 502 -s 10 -S COLOR -c red -o black -i red -I black
+n -t 502 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 502 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 502 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 502 -s 2 -S COLOR -c black -o black -i black -I black
@@ -5546,7 +5546,7 @@ n -t 502 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 502 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 502 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 502 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 503 -s 10 -S COLOR -c black -o red -i black -I red
+n -t 503 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 503 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 503 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 503 -s 2 -S COLOR -c black -o black -i black -I black
@@ -5744,7 +5744,7 @@ n -t 520 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 520 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 520 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 520 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 521 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 521 -s 10 -S COLOR -c red -o black -i red -I black
 n -t 521 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 521 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 521 -s 2 -S COLOR -c black -o black -i black -I black
@@ -5755,7 +5755,7 @@ n -t 521 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 521 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 521 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 521 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 522 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 522 -s 10 -S COLOR -c black -o red -i black -I red
 n -t 522 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 522 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 522 -s 2 -S COLOR -c black -o black -i black -I black
@@ -5821,7 +5821,7 @@ n -t 527 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 527 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 527 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 527 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 528 -s 10 -S COLOR -c red -o black -i red -I black
+n -t 528 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 528 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 528 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 528 -s 2 -S COLOR -c black -o black -i black -I black
@@ -5832,7 +5832,7 @@ n -t 528 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 528 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 528 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 528 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 529 -s 10 -S COLOR -c black -o red -i black -I red
+n -t 529 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 529 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 529 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 529 -s 2 -S COLOR -c black -o black -i black -I black
@@ -5920,7 +5920,7 @@ n -t 536 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 536 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 536 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 536 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 537 -s 10 -S COLOR -c red -o black -i red -I black
+n -t 537 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 537 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 537 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 537 -s 2 -S COLOR -c black -o black -i black -I black
@@ -5931,7 +5931,7 @@ n -t 537 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 537 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 537 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 537 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 538 -s 10 -S COLOR -c black -o red -i black -I red
+n -t 538 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 538 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 538 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 538 -s 2 -S COLOR -c black -o black -i black -I black
@@ -5942,7 +5942,7 @@ n -t 538 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 538 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 538 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 538 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 539 -s 10 -S COLOR -c red -o black -i red -I black
+n -t 539 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 539 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 539 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 539 -s 2 -S COLOR -c black -o black -i black -I black
@@ -5953,7 +5953,7 @@ n -t 539 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 539 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 539 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 539 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 540 -s 10 -S COLOR -c black -o red -i black -I red
+n -t 540 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 540 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 540 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 540 -s 2 -S COLOR -c black -o black -i black -I black
@@ -5975,7 +5975,7 @@ n -t 541 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 541 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 541 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 541 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 542 -s 10 -S COLOR -c red -o black -i red -I black
+n -t 542 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 542 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 542 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 542 -s 2 -S COLOR -c black -o black -i black -I black
@@ -5986,7 +5986,7 @@ n -t 542 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 542 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 542 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 542 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 543 -s 10 -S COLOR -c black -o red -i black -I red
+n -t 543 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 543 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 543 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 543 -s 2 -S COLOR -c black -o black -i black -I black
@@ -6030,7 +6030,7 @@ n -t 546 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 546 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 546 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 546 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 547 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 547 -s 10 -S COLOR -c red -o black -i red -I black
 n -t 547 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 547 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 547 -s 2 -S COLOR -c black -o black -i black -I black
@@ -6041,7 +6041,7 @@ n -t 547 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 547 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 547 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 547 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 548 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 548 -s 10 -S COLOR -c black -o red -i black -I red
 n -t 548 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 548 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 548 -s 2 -S COLOR -c black -o black -i black -I black
@@ -6052,7 +6052,7 @@ n -t 548 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 548 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 548 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 548 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 549 -s 10 -S COLOR -c red -o black -i red -I black
+n -t 549 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 549 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 549 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 549 -s 2 -S COLOR -c black -o black -i black -I black
@@ -6063,7 +6063,7 @@ n -t 549 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 549 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 549 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 549 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 550 -s 10 -S COLOR -c black -o red -i black -I red
+n -t 550 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 550 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 550 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 550 -s 2 -S COLOR -c black -o black -i black -I black
@@ -6547,7 +6547,7 @@ n -t 593 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 593 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 593 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 593 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 594 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 594 -s 10 -S COLOR -c red -o black -i red -I black
 n -t 594 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 594 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 594 -s 2 -S COLOR -c black -o black -i black -I black
@@ -6558,7 +6558,7 @@ n -t 594 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 594 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 594 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 594 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 595 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 595 -s 10 -S COLOR -c black -o red -i black -I red
 n -t 595 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 595 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 595 -s 2 -S COLOR -c black -o black -i black -I black
@@ -6789,7 +6789,7 @@ n -t 615 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 615 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 615 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 615 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 616 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 616 -s 10 -S COLOR -c red -o black -i red -I black
 n -t 616 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 616 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 616 -s 2 -S COLOR -c black -o black -i black -I black
@@ -6800,7 +6800,7 @@ n -t 616 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 616 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 616 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 616 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 617 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 617 -s 10 -S COLOR -c black -o red -i black -I red
 n -t 617 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 617 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 617 -s 2 -S COLOR -c black -o black -i black -I black
@@ -7031,7 +7031,7 @@ n -t 637 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 637 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 637 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 637 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 638 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 638 -s 10 -S COLOR -c red -o black -i red -I black
 n -t 638 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 638 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 638 -s 2 -S COLOR -c black -o black -i black -I black
@@ -7042,7 +7042,7 @@ n -t 638 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 638 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 638 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 638 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 639 -s 10 -S COLOR -c red -o black -i red -I black
+n -t 639 -s 10 -S COLOR -c black -o red -i black -I red
 n -t 639 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 639 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 639 -s 2 -S COLOR -c black -o black -i black -I black
@@ -7053,7 +7053,7 @@ n -t 639 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 639 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 639 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 639 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 640 -s 10 -S COLOR -c black -o red -i black -I red
+n -t 640 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 640 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 640 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 640 -s 2 -S COLOR -c black -o black -i black -I black
@@ -7405,7 +7405,7 @@ n -t 671 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 671 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 671 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 671 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 672 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 672 -s 10 -S COLOR -c red -o black -i red -I black
 n -t 672 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 672 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 672 -s 2 -S COLOR -c black -o black -i black -I black
@@ -7416,7 +7416,7 @@ n -t 672 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 672 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 672 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 672 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 673 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 673 -s 10 -S COLOR -c black -o red -i black -I red
 n -t 673 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 673 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 673 -s 2 -S COLOR -c black -o black -i black -I black
@@ -7757,7 +7757,7 @@ n -t 703 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 703 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 703 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 703 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 704 -s 10 -S COLOR -c red -o black -i red -I black
+n -t 704 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 704 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 704 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 704 -s 2 -S COLOR -c black -o black -i black -I black
@@ -7768,7 +7768,7 @@ n -t 704 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 704 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 704 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 704 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 705 -s 10 -S COLOR -c black -o red -i black -I red
+n -t 705 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 705 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 705 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 705 -s 2 -S COLOR -c black -o black -i black -I black
@@ -7878,7 +7878,7 @@ n -t 714 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 714 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 714 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 714 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 715 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 715 -s 10 -S COLOR -c red -o black -i red -I black
 n -t 715 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 715 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 715 -s 2 -S COLOR -c black -o black -i black -I black
@@ -7889,7 +7889,7 @@ n -t 715 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 715 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 715 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 715 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 716 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 716 -s 10 -S COLOR -c black -o red -i black -I red
 n -t 716 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 716 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 716 -s 2 -S COLOR -c black -o black -i black -I black
@@ -7999,7 +7999,7 @@ n -t 725 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 725 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 725 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 725 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 726 -s 10 -S COLOR -c red -o black -i red -I black
+n -t 726 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 726 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 726 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 726 -s 2 -S COLOR -c black -o black -i black -I black
@@ -8010,7 +8010,7 @@ n -t 726 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 726 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 726 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 726 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 727 -s 10 -S COLOR -c red -o red -i red -I red
+n -t 727 -s 10 -S COLOR -c red -o black -i red -I black
 n -t 727 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 727 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 727 -s 2 -S COLOR -c black -o black -i black -I black
@@ -8164,7 +8164,7 @@ n -t 740 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 740 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 740 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 740 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 741 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 741 -s 10 -S COLOR -c red -o black -i red -I black
 n -t 741 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 741 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 741 -s 2 -S COLOR -c black -o black -i black -I black
@@ -8175,7 +8175,7 @@ n -t 741 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 741 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 741 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 741 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 742 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 742 -s 10 -S COLOR -c black -o red -i black -I red
 n -t 742 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 742 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 742 -s 2 -S COLOR -c black -o black -i black -I black
@@ -8263,7 +8263,7 @@ n -t 749 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 749 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 749 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 749 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 750 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 750 -s 10 -S COLOR -c red -o black -i red -I black
 n -t 750 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 750 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 750 -s 2 -S COLOR -c black -o black -i black -I black
@@ -8274,7 +8274,7 @@ n -t 750 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 750 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 750 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 750 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 751 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 751 -s 10 -S COLOR -c black -o red -i black -I red
 n -t 751 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 751 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 751 -s 2 -S COLOR -c black -o black -i black -I black
@@ -8307,7 +8307,7 @@ n -t 753 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 753 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 753 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 753 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 754 -s 10 -S COLOR -c red -o black -i red -I black
+n -t 754 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 754 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 754 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 754 -s 2 -S COLOR -c black -o black -i black -I black
@@ -8318,7 +8318,7 @@ n -t 754 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 754 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 754 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 754 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 755 -s 10 -S COLOR -c black -o red -i black -I red
+n -t 755 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 755 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 755 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 755 -s 2 -S COLOR -c black -o black -i black -I black
@@ -8329,7 +8329,7 @@ n -t 755 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 755 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 755 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 755 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 756 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 756 -s 10 -S COLOR -c red -o black -i red -I black
 n -t 756 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 756 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 756 -s 2 -S COLOR -c black -o black -i black -I black
@@ -8340,7 +8340,7 @@ n -t 756 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 756 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 756 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 756 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 757 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 757 -s 10 -S COLOR -c black -o red -i black -I red
 n -t 757 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 757 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 757 -s 2 -S COLOR -c black -o black -i black -I black
@@ -8483,7 +8483,7 @@ n -t 769 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 769 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 769 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 769 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 770 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 770 -s 10 -S COLOR -c red -o black -i red -I black
 n -t 770 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 770 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 770 -s 2 -S COLOR -c black -o black -i black -I black
@@ -8494,7 +8494,7 @@ n -t 770 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 770 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 770 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 770 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 771 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 771 -s 10 -S COLOR -c black -o red -i black -I red
 n -t 771 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 771 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 771 -s 2 -S COLOR -c black -o black -i black -I black
@@ -8560,7 +8560,7 @@ n -t 776 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 776 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 776 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 776 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 777 -s 10 -S COLOR -c red -o black -i red -I black
+n -t 777 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 777 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 777 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 777 -s 2 -S COLOR -c black -o black -i black -I black
@@ -8571,7 +8571,7 @@ n -t 777 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 777 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 777 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 777 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 778 -s 10 -S COLOR -c black -o red -i black -I red
+n -t 778 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 778 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 778 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 778 -s 2 -S COLOR -c black -o black -i black -I black
@@ -9000,7 +9000,7 @@ n -t 816 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 816 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 816 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 816 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 817 -s 10 -S COLOR -c red -o black -i red -I black
+n -t 817 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 817 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 817 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 817 -s 2 -S COLOR -c black -o black -i black -I black
@@ -9011,7 +9011,7 @@ n -t 817 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 817 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 817 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 817 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 818 -s 10 -S COLOR -c black -o red -i black -I red
+n -t 818 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 818 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 818 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 818 -s 2 -S COLOR -c black -o black -i black -I black
@@ -9055,7 +9055,7 @@ n -t 821 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 821 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 821 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 821 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 822 -s 10 -S COLOR -c red -o black -i red -I black
+n -t 822 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 822 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 822 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 822 -s 2 -S COLOR -c black -o black -i black -I black
@@ -9066,7 +9066,7 @@ n -t 822 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 822 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 822 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 822 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 823 -s 10 -S COLOR -c black -o red -i black -I red
+n -t 823 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 823 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 823 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 823 -s 2 -S COLOR -c black -o black -i black -I black
@@ -9165,7 +9165,7 @@ n -t 831 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 831 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 831 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 831 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 832 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 832 -s 10 -S COLOR -c red -o black -i red -I black
 n -t 832 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 832 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 832 -s 2 -S COLOR -c black -o black -i black -I black
@@ -9176,7 +9176,7 @@ n -t 832 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 832 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 832 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 832 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 833 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 833 -s 10 -S COLOR -c black -o red -i black -I red
 n -t 833 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 833 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 833 -s 2 -S COLOR -c black -o black -i black -I black
@@ -9198,7 +9198,7 @@ n -t 834 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 834 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 834 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 834 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 835 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 835 -s 10 -S COLOR -c red -o black -i red -I black
 n -t 835 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 835 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 835 -s 2 -S COLOR -c black -o black -i black -I black
@@ -9209,7 +9209,7 @@ n -t 835 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 835 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 835 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 835 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 836 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 836 -s 10 -S COLOR -c black -o red -i black -I red
 n -t 836 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 836 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 836 -s 2 -S COLOR -c black -o black -i black -I black
@@ -9330,7 +9330,7 @@ n -t 846 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 846 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 846 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 846 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 847 -s 10 -S COLOR -c red -o black -i red -I black
+n -t 847 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 847 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 847 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 847 -s 2 -S COLOR -c black -o black -i black -I black
@@ -9341,7 +9341,7 @@ n -t 847 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 847 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 847 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 847 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 848 -s 10 -S COLOR -c black -o red -i black -I red
+n -t 848 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 848 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 848 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 848 -s 2 -S COLOR -c black -o black -i black -I black
@@ -9418,7 +9418,7 @@ n -t 854 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 854 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 854 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 854 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 855 -s 10 -S COLOR -c red -o black -i red -I black
+n -t 855 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 855 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 855 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 855 -s 2 -S COLOR -c black -o black -i black -I black
@@ -9429,7 +9429,7 @@ n -t 855 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 855 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 855 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 855 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 856 -s 10 -S COLOR -c black -o red -i black -I red
+n -t 856 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 856 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 856 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 856 -s 2 -S COLOR -c black -o black -i black -I black
@@ -9550,7 +9550,7 @@ n -t 866 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 866 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 866 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 866 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 867 -s 10 -S COLOR -c red -o black -i red -I black
+n -t 867 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 867 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 867 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 867 -s 2 -S COLOR -c black -o black -i black -I black
@@ -9561,7 +9561,7 @@ n -t 867 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 867 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 867 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 867 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 868 -s 10 -S COLOR -c red -o red -i red -I red
+n -t 868 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 868 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 868 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 868 -s 2 -S COLOR -c black -o black -i black -I black
@@ -9572,7 +9572,7 @@ n -t 868 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 868 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 868 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 868 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 869 -s 10 -S COLOR -c black -o red -i black -I red
+n -t 869 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 869 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 869 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 869 -s 2 -S COLOR -c black -o black -i black -I black
@@ -9704,7 +9704,7 @@ n -t 880 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 880 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 880 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 880 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 881 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 881 -s 10 -S COLOR -c red -o black -i red -I black
 n -t 881 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 881 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 881 -s 2 -S COLOR -c black -o black -i black -I black
@@ -9715,7 +9715,7 @@ n -t 881 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 881 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 881 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 881 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 882 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 882 -s 10 -S COLOR -c black -o red -i black -I red
 n -t 882 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 882 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 882 -s 2 -S COLOR -c black -o black -i black -I black
@@ -9836,7 +9836,7 @@ n -t 892 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 892 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 892 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 892 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 893 -s 10 -S COLOR -c red -o black -i red -I black
+n -t 893 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 893 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 893 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 893 -s 2 -S COLOR -c black -o black -i black -I black
@@ -9847,7 +9847,7 @@ n -t 893 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 893 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 893 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 893 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 894 -s 10 -S COLOR -c black -o red -i black -I red
+n -t 894 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 894 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 894 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 894 -s 2 -S COLOR -c black -o black -i black -I black
@@ -10034,7 +10034,7 @@ n -t 910 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 910 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 910 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 910 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 911 -s 10 -S COLOR -c red -o black -i red -I black
+n -t 911 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 911 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 911 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 911 -s 2 -S COLOR -c black -o black -i black -I black
@@ -10045,7 +10045,7 @@ n -t 911 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 911 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 911 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 911 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 912 -s 10 -S COLOR -c black -o red -i black -I red
+n -t 912 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 912 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 912 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 912 -s 2 -S COLOR -c black -o black -i black -I black
@@ -10056,7 +10056,7 @@ n -t 912 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 912 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 912 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 912 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 913 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 913 -s 10 -S COLOR -c red -o black -i red -I black
 n -t 913 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 913 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 913 -s 2 -S COLOR -c black -o black -i black -I black
@@ -10067,7 +10067,7 @@ n -t 913 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 913 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 913 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 913 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 914 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 914 -s 10 -S COLOR -c black -o red -i black -I red
 n -t 914 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 914 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 914 -s 2 -S COLOR -c black -o black -i black -I black
@@ -10155,7 +10155,7 @@ n -t 921 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 921 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 921 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 921 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 922 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 922 -s 10 -S COLOR -c red -o black -i red -I black
 n -t 922 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 922 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 922 -s 2 -S COLOR -c black -o black -i black -I black
@@ -10166,7 +10166,7 @@ n -t 922 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 922 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 922 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 922 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 923 -s 10 -S COLOR -c red -o black -i red -I black
+n -t 923 -s 10 -S COLOR -c black -o red -i black -I red
 n -t 923 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 923 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 923 -s 2 -S COLOR -c black -o black -i black -I black
@@ -10177,7 +10177,7 @@ n -t 923 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 923 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 923 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 923 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 924 -s 10 -S COLOR -c black -o red -i black -I red
+n -t 924 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 924 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 924 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 924 -s 2 -S COLOR -c black -o black -i black -I black
@@ -10540,7 +10540,7 @@ n -t 956 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 956 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 956 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 956 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 957 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 957 -s 10 -S COLOR -c red -o black -i red -I black
 n -t 957 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 957 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 957 -s 2 -S COLOR -c black -o black -i black -I black
@@ -10551,7 +10551,7 @@ n -t 957 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 957 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 957 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 957 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 958 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 958 -s 10 -S COLOR -c black -o red -i black -I red
 n -t 958 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 958 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 958 -s 2 -S COLOR -c black -o black -i black -I black
@@ -10639,7 +10639,7 @@ n -t 965 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 965 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 965 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 965 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 966 -s 10 -S COLOR -c red -o black -i red -I black
+n -t 966 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 966 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 966 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 966 -s 2 -S COLOR -c black -o black -i black -I black
@@ -10650,7 +10650,7 @@ n -t 966 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 966 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 966 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 966 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 967 -s 10 -S COLOR -c black -o red -i black -I red
+n -t 967 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 967 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 967 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 967 -s 2 -S COLOR -c black -o black -i black -I black
@@ -10771,7 +10771,7 @@ n -t 977 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 977 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 977 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 977 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 978 -s 10 -S COLOR -c red -o black -i red -I black
+n -t 978 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 978 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 978 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 978 -s 2 -S COLOR -c black -o black -i black -I black
@@ -10782,7 +10782,7 @@ n -t 978 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 978 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 978 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 978 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 979 -s 10 -S COLOR -c black -o red -i black -I red
+n -t 979 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 979 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 979 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 979 -s 2 -S COLOR -c black -o black -i black -I black
@@ -10837,7 +10837,7 @@ n -t 983 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 983 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 983 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 983 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 984 -s 10 -S COLOR -c red -o black -i red -I black
+n -t 984 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 984 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 984 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 984 -s 2 -S COLOR -c black -o black -i black -I black
@@ -10848,7 +10848,7 @@ n -t 984 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 984 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 984 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 984 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 985 -s 10 -S COLOR -c black -o red -i black -I red
+n -t 985 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 985 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 985 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 985 -s 2 -S COLOR -c black -o black -i black -I black
@@ -10881,7 +10881,7 @@ n -t 987 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 987 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 987 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 987 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 988 -s 10 -S COLOR -c red -o black -i red -I black
+n -t 988 -s 10 -S COLOR -c black -o black -i black -I black
 n -t 988 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 988 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 988 -s 2 -S COLOR -c black -o black -i black -I black
@@ -10892,7 +10892,7 @@ n -t 988 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 988 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 988 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 988 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 989 -s 10 -S COLOR -c black -o red -i black -I red
+n -t 989 -s 10 -S COLOR -c red -o black -i red -I black
 n -t 989 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 989 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 989 -s 2 -S COLOR -c black -o black -i black -I black
@@ -10903,7 +10903,7 @@ n -t 989 -s 6 -S COLOR -c black -o black -i black -I black
 n -t 989 -s 7 -S COLOR -c black -o black -i black -I black
 n -t 989 -s 8 -S COLOR -c black -o black -i black -I black
 n -t 989 -s 9 -S COLOR -c black -o black -i black -I black
-n -t 990 -s 10 -S COLOR -c black -o black -i black -I black
+n -t 990 -s 10 -S COLOR -c black -o red -i black -I red
 n -t 990 -s 0 -S COLOR -c black -o black -i black -I black
 n -t 990 -s 1 -S COLOR -c black -o black -i black -I black
 n -t 990 -s 2 -S COLOR -c black -o black -i black -I black

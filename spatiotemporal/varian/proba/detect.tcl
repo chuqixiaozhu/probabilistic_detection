@@ -35,8 +35,8 @@ set opt(target_size) 2                     ;# Size of the target
 set opt(time_click) 1;                      # Duration of a time slice
 #set opt(noise_avg) 0.05;                       # NOISE AVERAGE
 #set opt(noise_var) [expr 2 * $opt(noise_avg)]; # Noise variance
-set opt(noise_avg) 0;                       # NOISE AVERAGE
-set opt(noise_var) 1; # Noise variance
+set opt(noise_avg) 0.2;                       # NOISE AVERAGE
+set opt(noise_var) 0.6; # Noise variance
 set opt(noise_std) [expr sqrt($opt(noise_var))]; # Noise standard deviation
 set opt(S_0) 6;                             # Maximum of source signal
 set opt(decay_factor) 2;                    # Decay factor
@@ -51,8 +51,8 @@ set opt(detection_proba) 0; # Detection Probability
 set opt(false_proba) 0;     # False Alarm Probability
 set opt(radius_range_lower) 0;    # Lower Times of radius
 set opt(radius_range_upper) 3;    # Upper Times of radius
-set opt(decision_time) 1;         # Round time of final decision making
-#set opt(decision_threshold) [expr $opt(decision_time)/2 + 1]; # Decide Final 1 only if positive round time is not less than
+set opt(decision_time) 5;         # Round time of final decision making
+set opt(decision_threshold) [expr $opt(decision_time)/2 + 1]; # Decide Final 1 only if positive round time is not less than
 
 #puts "decision_threshold: $opt(decision_threshold)"; # test
 
@@ -260,22 +260,37 @@ proc fixed_sensors_detect {time_stamp} {
     for {set i 0} {$i < $opt(nfnode)} {incr i} {
         $fnode($i) color "black"
     }
-    set PBAPA 1.0
-    set PB_AP_A 1.0
-    for {set i 0} {$i < $opt(nfnode)} {incr i} {
-        set dist $fdists($i)
-        set e_s [get_source_energy $dist]
-        set mean [expr $e_s + $opt(noise_avg)]
-        set sd $opt(noise_std)
-        set signal [signal_measurement $dist $time_stamp]
-        set pba [normal_PDF $signal $mean $sd]
-        set pb_a [normal_PDF $signal $opt(noise_avg) $sd]
-        set PBAPA [expr $PBAPA * $pba]
-        set PB_AP_A [expr $PB_AP_A * $pb_a]
+    set ac 0
+    set nc 0
+    for {set dt 0} {$dt < $opt(decision_time)} {incr dt} {
+        set PBAPA 1.0
+        set PB_AP_A 1.0
+        for {set i 0} {$i < $opt(nfnode)} {incr i} {
+            set dist $fdists($i)
+            set e_s [get_source_energy $dist]
+            set mean [expr $e_s + $opt(noise_avg)]
+            set sd $opt(noise_std)
+            set signal [signal_measurement $dist $time_stamp]
+            set pba [normal_PDF $signal $mean $sd]
+            set pb_a [normal_PDF $signal $opt(noise_avg) $sd]
+            set PBAPA [expr $PBAPA * $pba]
+            set PB_AP_A [expr $PB_AP_A * $pb_a]
+        }
+        #set PBAPA [expr $opt(PA) * $PBAPA]
+        #set PB_AP_A [expr (1 - $opt(PA)) * $PB_AP_A]
+        if {$PBAPA >= $PB_AP_A} {
+            incr ac
+            if {$ac >= $opt(decision_threshold)} {
+                break
+            }
+        } else {
+            incr nc
+            if {$nc >= $opt(decision_threshold)} {
+                break
+            }
+        }
     }
-    #set PBAPA [expr $opt(PA) * $PBAPA]
-    #set PB_AP_A [expr (1 - $opt(PA)) * $PB_AP_A]
-    if {$PBAPA >= $PB_AP_A} {
+    if {$ac >= $opt(decision_threshold)} {
         if {$opt(target_on)} {
             incr opt(true_alarm)
         } else {

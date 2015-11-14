@@ -17,7 +17,7 @@ else:
     count = int(argvs[1])
 for i in range(count):
     #for fnode_num in range(10, 101, 10):
-    for variance in range(1, 11):
+    for variance in range(2, 11, 2):
         subprocess.call(['ns', 'detect.tcl', str(variance/10), result_file])
 
 # Process the results
