@@ -1,0 +1,711 @@
+Node 0: dist = 14.420582171829238
+Node 1: dist = 9.6809028507449728
+Node 2: dist = 12.305456226474949
+Node 3: dist = 12.738211803196524
+Node 4: dist = 12.133703275564411
+dist_min Node 1: 9.6809028507449728
+==== At 0 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = -0.842997 (/1.2)
+Target is 0
+true_alarm = 0
+false_alarm = 0
+==== At 1 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = 1.36402 (/1.2)
+Target is 0
+true_alarm = 0
+false_alarm = 1
+==== At 2 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = 0.71004999999999996 (/1.2)
+Target is 0
+true_alarm = 0
+false_alarm = 1
+==== At 3 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = -0.064565800000000007 (/1.2)
+Target is 0
+true_alarm = 0
+false_alarm = 1
+==== At 4 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = -0.22562399999999999 (/1.2)
+Target is 0
+true_alarm = 0
+false_alarm = 1
+==== At 5 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = 0.85896099999999997 (/1.2)
+Target is 0
+true_alarm = 0
+false_alarm = 1
+==== At 6 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = -0.49334 (/1.2)
+Target is 0
+true_alarm = 0
+false_alarm = 1
+==== At 7 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = -1.1046199999999999 (/1.2)
+Target is 0
+true_alarm = 0
+false_alarm = 1
+==== At 8 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = 0.21903500000000001 (/1.2)
+Target is 0
+true_alarm = 0
+false_alarm = 1
+==== At 9 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = 0.125946 (/1.2)
+Target is 0
+true_alarm = 0
+false_alarm = 1
+==== At 10 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = -0.157583 (/1.2)
+Target is 0
+true_alarm = 0
+false_alarm = 1
+==== At 11 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = 1.6464962131114309 (/1.2)
+Target is 1
+true_alarm = 1
+false_alarm = 1
+==== At 12 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = 0.030892900000000001 (/1.2)
+Target is 0
+true_alarm = 1
+false_alarm = 1
+==== At 13 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = 0.97799700000000001 (/1.2)
+Target is 0
+true_alarm = 1
+false_alarm = 1
+==== At 14 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = 0.90731899999999999 (/1.2)
+Target is 0
+true_alarm = 1
+false_alarm = 1
+==== At 15 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = 0.74130399999999996 (/1.2)
+Target is 0
+true_alarm = 1
+false_alarm = 1
+==== At 16 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = -0.72880199999999995 (/1.2)
+Target is 0
+true_alarm = 1
+false_alarm = 1
+==== At 17 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = -0.177761 (/1.2)
+Target is 0
+true_alarm = 1
+false_alarm = 1
+==== At 18 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = -1.1201399999999999 (/1.2)
+Target is 0
+true_alarm = 1
+false_alarm = 1
+==== At 19 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = 1.86232 (/1.2)
+Target is 0
+true_alarm = 1
+false_alarm = 2
+==== At 20 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = -0.34664600000000001 (/1.2)
+Target is 0
+true_alarm = 1
+false_alarm = 2
+==== At 21 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = 1.32158 (/1.2)
+Target is 0
+true_alarm = 1
+false_alarm = 3
+==== At 22 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = 0.103535 (/1.2)
+Target is 0
+true_alarm = 1
+false_alarm = 3
+==== At 23 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = -1.12676 (/1.2)
+Target is 0
+true_alarm = 1
+false_alarm = 3
+==== At 24 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = -0.090371000000000007 (/1.2)
+Target is 0
+true_alarm = 1
+false_alarm = 3
+==== At 25 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = -0.41395799999999999 (/1.2)
+Target is 0
+true_alarm = 1
+false_alarm = 3
+==== At 26 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = 1.14832 (/1.2)
+Target is 0
+true_alarm = 1
+false_alarm = 3
+==== At 27 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = 0.313058 (/1.2)
+Target is 0
+true_alarm = 1
+false_alarm = 3
+==== At 28 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = 0.018824899999999999 (/1.2)
+Target is 0
+true_alarm = 1
+false_alarm = 3
+==== At 29 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = 0.69554400000000005 (/1.2)
+Target is 0
+true_alarm = 1
+false_alarm = 3
+==== At 30 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = 0.62373299999999998 (/1.2)
+Target is 0
+true_alarm = 1
+false_alarm = 3
+==== At 31 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = 0.57030999999999998 (/1.2)
+Target is 0
+true_alarm = 1
+false_alarm = 3
+==== At 32 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = 1.5839160131114309 (/1.2)
+Target is 1
+true_alarm = 2
+false_alarm = 3
+==== At 33 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = 0.36992700000000001 (/1.2)
+Target is 0
+true_alarm = 2
+false_alarm = 3
+==== At 34 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = 1.778059213111431 (/1.2)
+Target is 1
+true_alarm = 3
+false_alarm = 3
+==== At 35 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = 0.75357099999999999 (/1.2)
+Target is 0
+true_alarm = 3
+false_alarm = 3
+==== At 36 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = -0.37143900000000002 (/1.2)
+Target is 0
+true_alarm = 3
+false_alarm = 3
+==== At 37 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = 1.6729099999999999 (/1.2)
+Target is 0
+true_alarm = 3
+false_alarm = 4
+==== At 38 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = 0.99105900000000002 (/1.2)
+Target is 0
+true_alarm = 3
+false_alarm = 4
+==== At 39 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = 1.0784499999999999 (/1.2)
+Target is 0
+true_alarm = 3
+false_alarm = 4
+==== At 40 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = -0.75057300000000005 (/1.2)
+Target is 0
+true_alarm = 3
+false_alarm = 4
+==== At 41 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = 0.31790000000000002 (/1.2)
+Target is 0
+true_alarm = 3
+false_alarm = 4
+==== At 42 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = -0.86327100000000001 (/1.2)
+Target is 0
+true_alarm = 3
+false_alarm = 4
+==== At 43 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = -0.98756200000000005 (/1.2)
+Target is 0
+true_alarm = 3
+false_alarm = 4
+==== At 44 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = 1.3490012131114311 (/1.2)
+Target is 1
+true_alarm = 4
+false_alarm = 4
+==== At 45 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = 1.0297002131114308 (/1.2)
+Target is 1
+true_alarm = 4
+false_alarm = 4
+==== At 46 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = 0.043404900000000003 (/1.2)
+Target is 0
+true_alarm = 4
+false_alarm = 4
+==== At 47 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = -0.50731099999999996 (/1.2)
+Target is 0
+true_alarm = 4
+false_alarm = 4
+==== At 48 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = 1.437173213111431 (/1.2)
+Target is 1
+true_alarm = 5
+false_alarm = 4
+==== At 49 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = -0.16707900000000001 (/1.2)
+Target is 0
+true_alarm = 5
+false_alarm = 4
+==== At 50 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = 1.2980799999999999 (/1.2)
+Target is 0
+true_alarm = 5
+false_alarm = 5
+==== At 51 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = -0.38642300000000002 (/1.2)
+Target is 0
+true_alarm = 5
+false_alarm = 5
+==== At 52 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = 0.0029782699999999999 (/1.2)
+Target is 0
+true_alarm = 5
+false_alarm = 5
+==== At 53 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = -0.33268900000000001 (/1.2)
+Target is 0
+true_alarm = 5
+false_alarm = 5
+==== At 54 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = -1.03068 (/1.2)
+Target is 0
+true_alarm = 5
+false_alarm = 5
+==== At 55 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = 0.85031900000000005 (/1.2)
+Target is 0
+true_alarm = 5
+false_alarm = 5
+==== At 56 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = 0.53252299999999997 (/1.2)
+Target is 0
+true_alarm = 5
+false_alarm = 5
+==== At 57 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = 0.47600999999999999 (/1.2)
+Target is 0
+true_alarm = 5
+false_alarm = 5
+==== At 58 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = -1.0913900000000001 (/1.2)
+Target is 0
+true_alarm = 5
+false_alarm = 5
+==== At 59 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = -0.085199399999999995 (/1.2)
+Target is 0
+true_alarm = 5
+false_alarm = 5
+==== At 60 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = 0.25185200000000002 (/1.2)
+Target is 0
+true_alarm = 5
+false_alarm = 5
+==== At 61 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = -0.65507199999999999 (/1.2)
+Target is 0
+true_alarm = 5
+false_alarm = 5
+==== At 62 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = -1.5650999999999999 (/1.2)
+Target is 0
+true_alarm = 5
+false_alarm = 5
+==== At 63 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = 0.21107400000000001 (/1.2)
+Target is 0
+true_alarm = 5
+false_alarm = 5
+==== At 64 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = 0.60708099999999998 (/1.2)
+Target is 0
+true_alarm = 5
+false_alarm = 5
+==== At 65 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = -0.77024700000000001 (/1.2)
+Target is 0
+true_alarm = 5
+false_alarm = 5
+==== At 66 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = 0.031444213111430974 (/1.2)
+Target is 1
+true_alarm = 5
+false_alarm = 5
+==== At 67 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = 0.25660300000000003 (/1.2)
+Target is 0
+true_alarm = 5
+false_alarm = 5
+==== At 68 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = -0.22123999999999999 (/1.2)
+Target is 0
+true_alarm = 5
+false_alarm = 5
+==== At 69 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = -0.42058800000000002 (/1.2)
+Target is 0
+true_alarm = 5
+false_alarm = 5
+==== At 70 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = -0.86382800000000004 (/1.2)
+Target is 0
+true_alarm = 5
+false_alarm = 5
+==== At 71 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = 0.12048399999999999 (/1.2)
+Target is 0
+true_alarm = 5
+false_alarm = 5
+==== At 72 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = 0.239124 (/1.2)
+Target is 0
+true_alarm = 5
+false_alarm = 5
+==== At 73 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = -0.27148299999999997 (/1.2)
+Target is 0
+true_alarm = 5
+false_alarm = 5
+==== At 74 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = -0.84443999999999997 (/1.2)
+Target is 0
+true_alarm = 5
+false_alarm = 5
+==== At 75 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = 0.54133900000000001 (/1.2)
+Target is 0
+true_alarm = 5
+false_alarm = 5
+==== At 76 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = 0.92733600000000005 (/1.2)
+Target is 0
+true_alarm = 5
+false_alarm = 5
+==== At 77 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = 0.55901421311143085 (/1.2)
+Target is 1
+true_alarm = 5
+false_alarm = 5
+==== At 78 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = -0.288603 (/1.2)
+Target is 0
+true_alarm = 5
+false_alarm = 5
+==== At 79 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = -0.079167399999999999 (/1.2)
+Target is 0
+true_alarm = 5
+false_alarm = 5
+==== At 80 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = -0.770625 (/1.2)
+Target is 0
+true_alarm = 5
+false_alarm = 5
+==== At 81 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = 0.56834499999999999 (/1.2)
+Target is 0
+true_alarm = 5
+false_alarm = 5
+==== At 82 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = 0.73666500000000001 (/1.2)
+Target is 0
+true_alarm = 5
+false_alarm = 5
+==== At 83 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = 1.4311 (/1.2)
+Target is 0
+true_alarm = 5
+false_alarm = 6
+==== At 84 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = 2.0969500000000001 (/1.2)
+Target is 0
+true_alarm = 5
+false_alarm = 7
+==== At 85 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = 0.74057700000000004 (/1.2)
+Target is 0
+true_alarm = 5
+false_alarm = 7
+==== At 86 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = -1.03633 (/1.2)
+Target is 0
+true_alarm = 5
+false_alarm = 7
+==== At 87 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = 2.10242 (/1.2)
+Target is 0
+true_alarm = 5
+false_alarm = 8
+==== At 88 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = 0.78095999999999999 (/1.2)
+Target is 0
+true_alarm = 5
+false_alarm = 8
+==== At 89 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = 1.6396200000000001 (/1.2)
+Target is 0
+true_alarm = 5
+false_alarm = 9
+==== At 90 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = 0.60790021311143094 (/1.2)
+Target is 1
+true_alarm = 5
+false_alarm = 9
+==== At 91 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = 0.46005800000000002 (/1.2)
+Target is 0
+true_alarm = 5
+false_alarm = 9
+==== At 92 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = -0.275279 (/1.2)
+Target is 0
+true_alarm = 5
+false_alarm = 9
+==== At 93 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = 0.590754 (/1.2)
+Target is 0
+true_alarm = 5
+false_alarm = 9
+==== At 94 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = 1.6533298131114309 (/1.2)
+Target is 1
+true_alarm = 6
+false_alarm = 9
+==== At 95 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = 1.58782 (/1.2)
+Target is 0
+true_alarm = 6
+false_alarm = 10
+==== At 96 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = 0.96255500000000005 (/1.2)
+Target is 0
+true_alarm = 6
+false_alarm = 10
+==== At 97 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = -0.95707200000000003 (/1.2)
+Target is 0
+true_alarm = 6
+false_alarm = 10
+==== At 98 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = 1.5321899999999999 (/1.2)
+Target is 0
+true_alarm = 6
+false_alarm = 11
+==== At 99 ====
+TEST: 0.098524999999999974
+dist = 9.6809028507449728
+signal = -0.42067500000000002 (/1.2)
+Target is 0
+true_alarm = 6
+false_alarm = 11
+detection_proba: 0.59999999999999998
+false_proba: 0.12222222222222222
+num_nodes is set 6
+channel.cc:sendUp - Calc highestAntennaZ_ and distCST_
+highestAntennaZ_ = 1.5,  distCST_ = 550.0

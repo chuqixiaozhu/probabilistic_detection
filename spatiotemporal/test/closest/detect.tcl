@@ -26,7 +26,7 @@ set opt(x)      30                        ;# X dimension of topography
 set opt(y)      30                        ;# Y dimension of topography
 set opt(spot_x) [expr $opt(x) / 2.0];      # X coordinate of Target Spot
 set opt(spot_y) [expr $opt(y) / 2.0];      # Y coordinate of Target Spot
-set opt(stop)   1000                        ;# time of simulation end
+set opt(stop)   100                        ;# time of simulation end
 set opt(nfnode) 5                        ;# number of fixed nodes
 set opt(ntarget) 1;                        # number of targets
 set opt(node_size) 1                       ;# Size of nodes
@@ -34,8 +34,8 @@ set opt(target_size) 2                     ;# Size of the target
 set opt(time_click) 1;                      # Duration of a time slice
 #set opt(noise_avg) 1;                       # Noise average
 #set opt(noise_var) [expr 2 * $opt(noise_avg)]; # Noise variance
-set opt(noise_avg) 0;                       # Noise average
-set opt(noise_var) 1.0; # Noise variance
+set opt(noise_avg) 0.2;                       # Noise average
+set opt(noise_var) 0.6; # Noise variance
 set opt(noise_std) [expr sqrt($opt(noise_var))]; # Noise standard deviation
 set opt(S_0) 6;                             # Maximum of source singal
 set opt(decay_factor) 2;                    # Decay factor
@@ -44,7 +44,7 @@ set opt(sensitivity) 1;         # Factor for modifying lambda
 #set opt(lambda) [expr $opt(S_0)/pow(1.1, $opt(decay_factor)) + $opt(noise_avg) - $opt(sensitivity) * $opt(noise_var)]\
     ; # Threshold of Signal measurements
 set opt(lambda) 1.2
-set opt(PA) 0.05;         # Target Appearance probability
+set opt(PA) 0.1;         # Target Appearance probability
 set opt(target_on) 0;     # Flag of target's presence
 set opt(true_alarm) 0;   # Number of true alarms
 set opt(false_alarm) 0;   # Number of false alarms
@@ -225,10 +225,14 @@ proc signal_measurement {dist time_stamp} {
 # Fixed sensors detect
 proc fixed_sensors_detect {time_stamp} {
     global opt fnode fdists ;# lambda
+    puts "==== At $time_stamp ===="
     $fnode($opt(closest_index)) color "black"
     set is_alert 0
     set dist $fdists($opt(closest_index))
     set signal [signal_measurement $dist $time_stamp]
+    puts "TEST: [expr 1.0 - [normal_CDF $opt(lambda) $opt(noise_avg) $opt(noise_std)]]"
+    puts "dist = $dist"
+    puts "signal = $signal (/$opt(lambda))"
     #if {$signal >= $lambda($opt(closest_index))} {}
     if {$signal >= $opt(lambda)} {
         set is_alert 1
@@ -241,6 +245,9 @@ proc fixed_sensors_detect {time_stamp} {
             incr opt(false_alarm)
         }
     }
+    puts "Target is $opt(target_on)"
+    puts "true_alarm = $opt(true_alarm)"
+    puts "false_alarm = $opt(false_alarm)"
 }
 
 #===================================
@@ -305,6 +312,7 @@ for {set i 0} {$i < $opt(nfnode)} {incr i} {
     set yf [get_a_y]
     set dist [deploy_sensor xf yf]
     set fdists($i) $dist
+    puts "Node $i: dist = $dist"
     #set lambda($i) [compute_lambda $dist]
     if {$dist < $dist_min} {
         set dist_min $dist
@@ -318,6 +326,7 @@ for {set i 0} {$i < $opt(nfnode)} {incr i} {
     $fnode($i) color "black"
     $fnode($i) shape "circle"
 }
+puts "dist_min Node $opt(closest_index): $fdists($opt(closest_index))"
 
 # Create the Target
 set target [$ns node]

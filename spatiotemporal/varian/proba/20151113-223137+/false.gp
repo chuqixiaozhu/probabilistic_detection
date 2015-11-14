@@ -3,7 +3,7 @@
 #set terminal postscript eps color solid font "Times New Roman, 20"
 set terminal postscript eps color solid
 #set terminal emf color solid enhanced font "Times New Roman, 20"
-set output "100_f_num_vs_pfalse.eps"
+set output "100_var_vs_pfalse.eps"
 #set terminal qt font "Times New Roman, 20"
 #set xlabel "{/SimSun=20 ¿Õ¶´ÊýÁ¿}"
 set xlabel "Variance of Noise"
